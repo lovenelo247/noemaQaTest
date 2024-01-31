@@ -1,0 +1,11 @@
+version: "3.1"
+
+services:
+  test:
+    image: noema:1.0.0
+    container_name: "test"
+    environment:
+      - BASE_URL=${BASE_URL}
+    ports:
+      - "8081:9323"
+
